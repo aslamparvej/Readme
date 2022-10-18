@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    --heading-color: rgb(62, 171, 166);
+}
+h1,h2,h3,h4{
+    color: var(--heading-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+

@@ -1,0 +1,94 @@
+header {
+  width: 90%;
+  height: 5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding-left: 1rem;
+}
+header nav ul li a{
+  font-family: 'Montserrat', sans-serif;
+  color: blue;
+  font-size: 1.2rem;
+}
+header nav ul li a:hover{
+  color: red;
+}
+#logo {
+  font-size: 3rem;
+  color: blue;
+  font-family: "Anton", sans-serif;
+}
+#logo span {
+  font-family: "Anton", sans-serif;
+  color: rgb(255, 0, 21);
+}
+/* Hamburger Menu Styles */
+.menu-btn {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 3rem;
+  height: 3rem;
+}
+.menu-btn span{
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: red;
+}
+
+#side-drawer{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(22, 22, 121);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#side-drawer ul{
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#side-drawer ul li {
+  margin: 1rem 0;
+}
+#side-drawer ul li a{
+  font-size: 1.3rem;
+  color: white;
+}
+#side-drawer header {
+  width: 90%;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center
+}
+@media (max-width: 560px){
+  #logo{
+    font-size: 3.5rem;
+  }
+  nav{
+    display: none;
+  }
+  .menu-btn{
+    display: flex;
+  }
+  #side-drawer-nav{
+    display: block;
+  }
+  #side-drawer:target{
+    display: block;
+  }
+}
