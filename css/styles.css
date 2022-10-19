@@ -3,10 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    --heading-color: rgb(62, 171, 166);
 }
 h1,h2,h3,h4{
-    color: var(--heading-color);
+    color: blue;
 }
 h1{
     font-size: 3rem;
