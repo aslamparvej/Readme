@@ -1,0 +1,21 @@
+.category-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.content div {
+    padding-left: 3rem;
+}
+.content div p{
+    padding-top: 1rem;
+}
+.content div p a{
+    font-family: 'Public Sans', sans-serif;
+    color: red;
+    font-weight: 500;
+}
+
+@media (max-width: 760px){
+    .category-container h2{
+        font-size: 1.8rem;
+    }
+}
