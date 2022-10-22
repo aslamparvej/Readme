@@ -13,7 +13,7 @@ include "head.php";
         <nav>
             <ul>
                 <li><a href="./index.php">Home</a></li>
-                <li><a href="">Category</a></li>
+                <li><a href="./category.php">Category</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="https://aslamparvej.github.io/Portfolio/">About Us</a></li>
             </ul>
@@ -36,7 +36,7 @@ include "head.php";
         <nav id="side-drawer-nav">
             <ul>
                 <li><a href="./index.php">Home</a></li>
-                <li><a href="">Category</a></li>
+                <li><a href="./category.php">Category</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="https://aslamparvej.github.io/Portfolio/">About Us</a></li>
             </ul>
