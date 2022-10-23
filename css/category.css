@@ -5,6 +5,10 @@
 .content div {
     padding-left: 3rem;
 }
+/* .category-container h2{
+    text-align: center;
+    border-bottom: 3px solid red;
+} */
 .content div p{
     padding-top: 1rem;
 }
