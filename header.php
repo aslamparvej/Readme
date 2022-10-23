@@ -14,8 +14,8 @@ include "head.php";
             <ul>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./category.php">Category</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="https://aslamparvej.github.io/Portfolio/">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="about.php">About Us</a></li>
             </ul>
         </nav>
         <!-- Hamburger Menu  -->
@@ -37,8 +37,8 @@ include "head.php";
             <ul>
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./category.php">Category</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="https://aslamparvej.github.io/Portfolio/">About Us</a></li>
+                <li><a href="./Contact.php">Contact Us</a></li>
+                <li><a href="./about.php">About Us</a></li>
             </ul>
         </nav>
     </aside>
