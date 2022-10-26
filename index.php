@@ -14,7 +14,7 @@ include "header.php";
                     <h3 class="title">How to Become an App Developer</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, deserunt delectus natus quidem tenetur quibusdam quos veniam, iste alias dolorum necessitatibus quae atque adipisci. Aliquid eius autem consequatur quos tempora .</p>
                     <div class="btn">
-                        <a href="">Read More.</a>
+                        <a href="./blog_post.php">Read More.</a>
                     </div>
                 </div>
             </div>

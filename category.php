@@ -10,8 +10,8 @@ include "header.php";
     <div class="content">
         <h2>Web Development</h2>
         <div>
-            <p><a href="">1: How to Become an Web Developer</a></p>
-            <p><a href="">2: What is HTML</a></p>
+            <p><a href="./blog_post.php">1: How to Become an Web Developer</a></p>
+            <p><a href="./blog_post.php">2: What is HTML</a></p>
             <p><a href="">3: How to become a front-end web developer</a></p>
             <p><a href="">4: What is CSS</a></p>
             <p><a href="">5: How to Become an App Developer</a></p>

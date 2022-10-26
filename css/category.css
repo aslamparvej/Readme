@@ -18,7 +18,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 760px){
+@media (max-width: 800px){
     .category-container h2{
         font-size: 1.8rem;
     }
