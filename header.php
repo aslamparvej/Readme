@@ -16,6 +16,7 @@ include "head.php";
                 <li><a href="./category.php">Category</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
                 <li><a href="about.php">About Us</a></li>
+                <li><a href="./contributor/index.php">Contribute</a></li>
             </ul>
         </nav>
         <!-- Hamburger Menu  -->
@@ -39,6 +40,7 @@ include "head.php";
                 <li><a href="./category.php">Category</a></li>
                 <li><a href="./contact.php">Contact Us</a></li>
                 <li><a href="./about.php">About Us</a></li>
+                <li><a href="./contributor/index.php">Contribute</a></li>
             </ul>
         </nav>
     </aside>
