@@ -1,0 +1,64 @@
+.login-form-cotainer {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  color: red;
+}
+form {
+  width: 30%;
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color: rgb(244, 239, 239);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.input-element {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.input-element label {
+  color: blue;
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: "Public Sans", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.input-element input {
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: "Public Sans", sans-serif;
+}
+.btn-element button {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: "Public Sans", sans-serif;
+}
+.btn-element button:hover {
+  cursor: pointer;
+}
+
+.login-form-cotainer p{
+    color: rgb(49, 49, 49);;
+}
+.login-form-cotainer a{
+    color: red;
+}
+
+@media (max-width: 800px) {
+  form{
+    width: 100%;
+  }
+}
