@@ -18,7 +18,7 @@ if(!isset($_SESSION['username'])){
         <nav>
             <ul>
                 <li><a href="./home.php">Home</a></li>
-                <li><a href="">Your Blog</a></li>
+                <li><a href="./blogs.php">Your Blog</a></li>
                 <li><a href="./create_blog.php">Create Blog Post</a></li>
                 <li><a href="./logout.php" class="logout">Logout</a></li>
             </ul>
@@ -41,7 +41,7 @@ if(!isset($_SESSION['username'])){
         <nav id="side-drawer-nav">
             <ul>
                 <li><a href="./home.php">Home</a></li>
-                <li><a href="">Your Blog</a></li>
+                <li><a href="./blogs.php">Your Blog</a></li>
                 <li><a href="./create_blog.php">Create Blog Post</a></li>
                 <li><a href="./logout.php" class="logout">Logout</a></li>
             </ul>
