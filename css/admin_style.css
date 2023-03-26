@@ -2,9 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif  !important;
 }
-body {
-  background-color: rgb(229, 229, 229);
+body{
+  background-color: white !important;
 }
 .form-container {
   width: 90%;
@@ -27,7 +28,8 @@ body {
 }
 .form-container form .input-container label,
 .form-container form .input-container input,
-.form-container form .input-container textarea {
+.form-container form .input-container textarea,
+.form-container form .input-container select{
   font-size: 1.2rem;
   font-family: "Public Sans", sans-serif;
   border-radius: 5px;
@@ -57,6 +59,16 @@ body {
   background-color: rgb(193, 3, 3);
 }
 
+.write-blog-label{
+  font-weight: 500;
+  color: #333333;
+}
+
+.write-blog-btn-container{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 800px) {
   .form-container form {
     width: 90%;

@@ -31,6 +31,7 @@ main{
 }
 
 .text-container{
+    width: 90%;
     margin: 0 1rem;
     display: flex;
     flex-direction: column;
@@ -50,6 +51,7 @@ main{
 }
 
 .btn a{
+    text-align: center;
     color: red;
     font-size: 1.3rem;
 }
