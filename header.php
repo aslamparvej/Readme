@@ -6,7 +6,10 @@ include "head.php";
 </head>
 
 <body>
-    <header>
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+            <header>
         <a href="./index.php">
             <p id="logo">Read<span>me</span></p>
         </a>
@@ -26,7 +29,9 @@ include "head.php";
             <span></span>
         </a>
     </header>
-    <aside id="side-drawer">
+            </div>
+        </div>
+        <aside id="side-drawer">
         <header>
         <a href="#" class="menu-btn">
             <span></span>
@@ -44,3 +49,8 @@ include "head.php";
             </ul>
         </nav>
     </aside>
+    </div>
+
+
+   
+    

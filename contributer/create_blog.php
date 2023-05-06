@@ -59,53 +59,9 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<!-- <div class="form-container">
-    <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
-        <div class="input-container">
-            <label for="heading">*Heading:</label>
-            <input type="text" id="heading" name="heading" required>
-        </div>
-        <div class="input-container">
-            <label for="image">*Upload Blog Image:</label>
-            <input type="file" id="image" name="image" required>
-        </div>
-        <div class="input-container">
-            <label for="first-para">*First Paragraph:</label>
-            <textarea name="first-para" id="first-para" cols="30" rows="10" required></textarea>
-        </div>
-        <div class="input-container">
-            <label for="second-para">*Second Paragraph:</label>
-            <textarea name="second-para" id="second-para" cols="30" rows="10" required></textarea>
-        </div>
-        <div class="input-container">
-            <label for="third-para">*Third Paragraph:</label>
-            <textarea name="third-para" id="third-para" cols="30" rows="10" required></textarea>
-        </div>
-        <div class="input-container">
-            <label for="category">*Category:</label>
-            <select name="category" id="category">
-                <option disabled selected>Select category</option>
-                <?php
-                $sql = "SELECT * FROM category";
-                $result = mysqli_query($conn, $sql);
-
-                if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<option value='{$row['category_id']}'>{$row['category_name']}</option>";
-                    }
-                }
-                ?>
-            </select>
-        </div>
-        <div class="btn-container">
-            <button type="submit" name="submit">Submit Your Blog</button>
-        </div>
-    </form>
-</div> -->
-
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-lg-8">
             <form action="<?php $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
                 <div class="form-group mt-3">
                     <label for="main-heading" class="form-label write-blog-label">Blog Main Heading</label>
