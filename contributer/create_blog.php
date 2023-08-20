@@ -17,13 +17,13 @@ if (isset($_POST['submit'])) {
         $file_size = $_FILES['image']['size'];
         $file_tmp = $_FILES['image']['tmp_name'];
         $file_type = $_FILES['image']['type'];
-        $file_ext = strtolower(end(explode('.', $file_name)));
+        // $file_ext = strtolower(end(explode('.', $file_name)));
         $extensions = array('jpeg', 'jpg', 'png');
 
        // Checking file extensions
-        if (in_array($file_ext, $extensions) === false) {
-            $errors[] = "This  extension file not allowed, Please choose a JPG or PNG file";
-        }
+        // if (in_array($file_ext, $extensions) === false) {
+        //     $errors[] = "This  extension file not allowed, Please choose a JPG or PNG file";
+        // }
 
         // if file is greater than 2MB 
         if ($file_size > 2097152) {
@@ -40,6 +40,12 @@ if (isset($_POST['submit'])) {
     }
 
 
+    // var_dump($file_name);
+    // Generate unique ID for blog post 
+    $prefix = 'blog_';
+    $uniqueId = uniqid($prefix);
+    $Unique_Blog_Id = $uniqueId;
+
     $heading = mysqli_real_escape_string($conn, $_POST['main-heading']);
     $paragraph_1 = mysqli_real_escape_string($conn, $_POST['editor']);
     // $paragraph_1 = mysqli_real_escape_string($conn, $_POST['first-para']);
@@ -48,11 +54,17 @@ if (isset($_POST['submit'])) {
     $contributer_id = $_SESSION['contributer_id'];
     $category_id = mysqli_real_escape_string($conn, $_POST['category']);
 
-    $sql = "INSERT INTO blog_post (blog_title,blog_para1,blog_image,blog_category_id,blog_contributer_id)
-    VALUES ('{$heading}','{$paragraph_1}','{$file_name}',{$category_id},{$contributer_id})";
+    $sql = "INSERT INTO blog_post (blog_id, blog_title, blog_para1, blog_image, blog_category_id, blog_contributer_id)
+    VALUES ('{$Unique_Blog_Id}','{$heading}','{$paragraph_1}','{$file_name}',{$category_id},{$contributer_id})";
+
+
+
+
     $result = mysqli_query($conn, $sql);
     if ($result) {
-        header("Location: {$hostname}/contributer/home.php");
+        // header("Location: {$hostname}/contributer/home.php");
+        // header("Location: http://localhost:8080/readme/contributer/home.php");
+
     } else {
         echo "<div>Query Failed!</div>";
     }
@@ -109,6 +121,8 @@ if (isset($_POST['submit'])) {
         toolbar: 'h1 h2 h3 h4 bold italic strikethrough blockquote bullist numlist backcolor | link image media codesample | removeformat help',
         menubar: false,
     });
+
+
 </script>
 
 <?php include "../footer.php" ?>

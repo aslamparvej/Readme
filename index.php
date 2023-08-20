@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/main.css">
 <?php
 include "header.php";
 include "./contributer/config.php";
@@ -12,54 +11,39 @@ if (!$result) {
 ?>
 <main>
     <div class="container">
-        <h2>Latest Blog Posts</h2>
-        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-            <div class="blog-container">
-                <div class="content-container">
-                    <div class="image-container">
-                    <img src="./contributer/upload/<?php echo $row['blog_image'];?>" alt="blog post image">
+        <div class="row mt-lg-5">
+            <div class="col-lg-10 home-blog-container">
+                <h2>Latest Blog Posts</h2>
+                <div class="row mt-lg-5">
+                    <div class="col-lg-9">
+                        <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                            <div class="card blog-container mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./contributer/upload/<?php echo $row['blog_image']; ?>" class="img-fluid rounded-start blog-card-image" alt="blog post image">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title"><?php echo $row['blog_title'] ?></h3>
+                                            <p><?php echo substr($row['blog_para1'], 0, 300) ?></p>
+                                            <div class="text-center">
+                                                <a href="./blog_post.php?id=<?php echo $row['blog_id'] ?>">Read More.</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php }  ?>
                     </div>
-                    <div class="text-container">
-                        <h3 class="title"><?php echo $row['blog_title'] ?></h3>
-                        <p><?php echo substr($row['blog_para1'], 0, 400) ?></p>
-                        <div class="btn">
-                            <a href="./blog_post.php?id=<?php echo $row['blog_id'] ?>">Read More.</a>
-                        </div>
+                    <div class="col-lg-3">
+                        <h4>Related Blog</h4>
+                        <p>Data coming soon</p>
                     </div>
                 </div>
+
             </div>
-        <?php }  ?>
+        </div>
     </div>
-    <!-- <div class="container">
-        <h2>App Development Blog</h2>
-        <div class="content-container">
-            <div class="image-container">
-                <img src="./images/blog-2.jpg" alt="blog image">
-            </div>
-            <div class="text-container">
-                <h3 class="title">How to Become an App Developer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, deserunt delectus natus quidem tenetur quibusdam quos veniam, iste alias dolorum necessitatibus quae atque adipisci. Aut quae eligendi assumenda voluptates .</p>
-                <div class="btn">
-                    <a href="">Read More.</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="container">
-        <h2>Machine Learning Blog</h2>
-        <div class="content-container">
-            <div class="image-container">
-                <img src="./images/blog-3.jpg" alt="blog image">
-            </div>
-            <div class="text-container">
-                <h3 class="title">How to Become an App Developer</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, deserunt delectus natus quidem tenetur quibusdam quos veniam, iste alias dolorum necessitatibus quae atque.</p>
-                <div class="btn">
-                    <a href="">Read More.</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
 </main>
 <?php
 include "footer.php";

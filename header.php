@@ -8,10 +8,10 @@ include "head.php";
 <body>
 <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col">
             <header>
         <a href="./index.php">
-            <p id="logo">Read<span>me</span></p>
+            <p id="logo">Dev <span>Dada</span></p>
         </a>
         <nav>
             <ul>
